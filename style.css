@@ -1,0 +1,96 @@
+*{
+  color:#000000;
+}
+body {
+  font-size: 16px;
+  color: #ffffff;
+  background-color:#ffffff;
+  font-family: 'Balsamiq Sans', cursive;
+}
+/** HEADER **/
+#header-nav {
+  background-color:#808080;
+  border-radius: 0;
+  border: 2px solid #000000;
+  height: 90px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Fool, LLC */
+  font-family: 'Oxygen', sans-serif;
+  color: #000000;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #bfbfbf;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+/**End Header**/
+
+/*Page*/
+
+#one-tile, #two-tile, #three-tile {
+  height: 800px;
+  width: 100%;
+  padding:10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  color: #000000;
+  background-color: #808080;
+}
+
+
+#one-tile span, #two-tile span, #three-tile span {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+
+/*End Page*/
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #one-tile, #two-tile, #three-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}
